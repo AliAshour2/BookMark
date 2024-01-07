@@ -102,6 +102,12 @@ function deleteBook(index) {
   displayBook(bookList);
 }
 
+function visit(index) {
+  var url = bookList[index].url;
+  window.open(url, "_blank");
+}
+
+
 function showErrorBox() {
   var errorBox = document.getElementById("errorBox");
   errorBox.classList.remove("d-none");
@@ -122,6 +128,10 @@ function closeErrorBox(event) {
   }
   });
 }
+
+
+
+
 
 
 
